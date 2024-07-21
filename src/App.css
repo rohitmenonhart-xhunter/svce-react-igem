@@ -1,38 +1,164 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #442f7b;
+  color: white;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #442f7b;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 20%;
+  padding: 40px;
+  height: 100vh;
+  overflow-y: auto;
+  width: 80%;
+  background-color: #442f7b;
+  box-sizing: border-box;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.background {
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 20px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+}
+
+.background h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.scrollable-content {
+  max-height: calc(100vh - 160px); /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding-right: 10px; /* Space for scrollbar */
+  box-sizing: border-box;
+}
+
+.scrollable-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.background a {
+  color: #442f7b;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.background a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #442f7b;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-image {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-content {
+  margin-top: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.footer {
+  background-color: #442f7b;
   color: white;
+  padding: 20px;
+  text-align: center;
+}
+/* .footer1 {
+  background-color: #2d1e70;
+  color: white;
+  padding: 20px;
+  text-align: center;
+} */
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* This allows wrapping if the screen is too narrow */
 }
 
-.App-link {
-  color: #61dafb;
+.footer img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Optional: Add some horizontal spacing between images */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.follow-us,
+.contact-us {
+  margin: 20px 0; /* Optional: Add some vertical spacing */
+}
+
+.follow-us h2, 
+.contact-us h2 {
+  margin-top: 10px; /* Ensure some spacing between images and text */
+}
+.images-ud
+{
+  width: 80px; /* Adjust the width as needed */
 }
